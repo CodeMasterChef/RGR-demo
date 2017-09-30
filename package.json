@@ -1,0 +1,36 @@
+{
+  "name": "rgrjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets node6,es2015",
+    "react": "webpack -w -d",
+    "database": "set MONGO_URL=mongodb://admin:adminpassword@ds141514.mlab.com:41514/rgrlab",
+    "start": "nodemon --exec npm run babel-node -- ./server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "events": "^1.1.1",
+    "express": "^4.15.4",
+    "express-graphql": "^0.6.11",
+    "flux": "^3.1.3",
+    "graphql": "^0.11.3",
+    "jquery": "^3.2.1",
+    "mongodb": "^2.2.31",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.12.1"
+  }
+}
